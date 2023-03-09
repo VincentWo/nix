@@ -24,6 +24,13 @@ in
           alacritty
           fuzzel
           pinentry_qt5
+
+          # ocaml dev
+          ocaml
+          ocamlformat
+          ocamlPackages.utop
+          ocamlPackages.dune_3
+          ocamlPackages.ocaml-lsp
         ];
       };
     };
