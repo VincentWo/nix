@@ -23,6 +23,7 @@ in
           hyprland
           alacritty
           fuzzel
+          pinentry_qt5
         ];
       };
     };
