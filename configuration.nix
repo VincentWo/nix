@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./home-manager.nix
     ];
 
   # Use the GRUB 2 boot loader.
@@ -49,12 +50,6 @@
   users.users.titania = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-     packages = with pkgs; [
-       firefox
-       hyprland
-       alacritty
-       fuzzel
-     ];
   };
 
   # List packages installed in system profile. To search, run:
@@ -65,7 +60,6 @@
      helix
      intel-media-driver
      gnupg
-     git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
